@@ -7,15 +7,6 @@ import (
 	"strconv"
 )
 
-func Find(slice []string, sliceItem string) bool {
-	for _, item := range slice {
-		if item == sliceItem {
-			return true
-		}
-	}
-	return false
-}
-
 func main() {
 
 	scanner := bufio.NewScanner(os.Stdin)
