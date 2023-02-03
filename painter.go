@@ -41,6 +41,9 @@ func main() {
 		if err2 != nil {
 			fmt.Println("Your input is not a number. Please only input a positive number. ")
 			panic("err")
+		} else if n == 0 {
+			fmt.Println("Why would you want to paint nothing? Start again please.")
+			panic("input 0 when giving wall dimensions")
 		} else {
 			wallsAndDimensions[nWalls] = n
 		}
@@ -70,6 +73,9 @@ func main() {
 			n4, err4 := strconv.ParseFloat(coatsOfPaint, 64)
 			if err4 != nil {
 				panic("Your input is not a number. Please only input a positive number. ")
+			} else if n4 == 0 {
+				fmt.Println("You need to have at least 1 coat of paint. Start again please.")
+				panic("user did not put on a coat, user is cold")
 			} else {
 				for wallName, wallArea := range wallsAndDimensions {
 					paintAmt := (wallArea / 11 * n4)
