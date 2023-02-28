@@ -1,0 +1,269 @@
+html{
+  cursor: url("https://ani.cursors-4u.net/toons/too-12/too1137.cur"), auto;
+}
+
+/* minecraft-style splash text css */
+#status {
+    color: #FFFF00;
+    font-size: 2vh;
+    font-family:'A-OTF Shin Go Pro', sans-serif;
+    text-shadow:3px 3px #3F3F00;
+    position: absolute;
+    width:30vh;
+    z-index: 2;
+    margin-left:62%;
+    margin-top:-4%;
+    text-align:center;
+}
+.pop {
+    animation: pop 0.58s infinite;
+    -webkit-animation: pop 0.58s infinite;
+}
+@keyframes pop {
+    from {
+        transform:scale(0.95)
+    }
+    50% {
+        transform:scale(1)
+    }
+    to {
+        transform:scale(0.95)
+    }
+}
+.tilt {
+    -ms-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+/* general formatting css */
+body {
+    color:rgb(255, 0, 234);
+    background-image: url("https://brutalmoose.com/wp-content/uploads/2022/11/spacebg.gif");
+}
+h1{color:#ff17ff; 
+    font-size: 700%; 
+    margin-bottom:0px;
+    margin-top:0px;
+    text-align: center; 
+    font-family: 'A-OTF Shin Go Pro', sans-serif;
+    text-shadow: 1px 2px 2px #8604ff;
+    display: block;
+}
+nav {
+    font-family:'A-OTF Shin Go Pro', sans-serif;
+    color: rgb(195, 0, 255);
+    text-align: center; 
+    margin-bottom:7vh;
+}
+#section-left {
+  margin-left:23%;
+  float:left;
+}
+#section-right {
+  margin-right:23%;
+  float:right;
+}
+#centered {
+  position: relative;
+  left: 50%;
+  top:20vh;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#video {
+  height: 75%;
+  width: 90%;
+}
+section {
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-family:'A-OTF Shin Go Pro', sans-serif;
+  border-radius:1vh;
+  border-color:rgba(0, 255, 255, 0.637);
+  background-color:#ff17ff38;
+  border-style: dashed;
+  border-width: 2px;
+  box-sizing: content-box;
+  width: 25%;
+  height: 45vh;
+  transition: 0.3s ease-in-out;
+}
+.friends{
+  height:fit-content;
+}
+section:hover{
+  background-color:#ff17ff81;
+}
+/* font for entire page is shin-go pro */
+@font-face{
+  font-family:"shingo";
+  src:url('https://fonts.cdnfonts.com/css/a-otf-shin-go-pro');
+}
+
+/* css for animating running horse at top of screen */
+#horse {
+  top: 1vh;
+  position:absolute;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 30s;
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg); 
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+/* css for sizing and position of horse model */
+#aSide {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  justify-content: center;
+  margin-top:7vh;
+  margin-left:35%;
+  margin-right:35%;
+  top: calc(50% - 250px);
+  bottom: calc(50% - 250px);
+}
+/* This styles the 3D object inserted in the aside container */
+#aSide model-viewer {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  justify-content: center;
+  border: none;
+}
+
+/* css for adding the little animation that plays when you hover over a link */
+a {
+    color:aqua;
+    background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+  
+/* css for neon effect on header */
+:root {
+    --shadow-color: #f44efa91;
+    --shadow-color-light: white;
+}
+.logo-1 {
+    color: white;
+    animation: neon 3s infinite;
+}
+  @keyframes neon {
+    0% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+    50% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+    }
+    100% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+  }
+
+  /* carousel */
+  #carousel-container {
+    width: 500px;
+    height: 332px;
+    position: relative;
+    margin: 50px auto 0;
+    border: 10px solid #000;
+    border-radius: 10px;
+  }
+  
+  #carousel-container > div:first-child {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  #carousel {
+    position: relative;
+    width: 5000px;
+    height: 332px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .animate{
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+  }
+  
+  .slide {
+    list-style: none;
+    position: relative;
+    float: left;
+    transform: translateX(-500px)
+  }
+  
+  #controls{
+    position: absolute;
+    width: 620px;
+    top: calc( 50% - 25px);
+    margin: 0 -80px;
+  }
+  
+  #controls span {
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  
+  #controls span:hover {
+    opacity: 1;
+  }
+  
+  #prev {
+    float: left;
+  }
+  
+  #next {
+    float: right;
+  }
